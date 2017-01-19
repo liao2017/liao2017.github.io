@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Change this -->
+    <title>World Population</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <meta name="description" content="A simple student's view of the world.">
+    <meta name="author" content="Chris Luo">
+
+    <link rel="shortcut icon" href="images/icon.png"/>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!--Google Fonts API -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="blogBody">
+      <h1 id="title">One Iris</h1>
+      <div id="navbar">
+        <div class="navbarTab" id="about"><p class="navLabel">About</p></div><!-- 
+         --><div class="navbarTab" id="new"><p class="navLabel">New</p></div><!-- 
+         --><div class="navbarTab" id="writing"><p class="navLabel">Writing</p></div><!-- 
+         --><div class="navbarTab" id="tech"><p class="navLabel">Tech</p></div><!-- 
+         --><div class="navbarTab" id="gaming"><p class="navLabel">Gaming</p></div>
+      </div>
+
+      <p class="date">June 28, 2016</p>
+      <h2 class="postTitle">World Population</h2>
+      <img height="25%" width="90%" class="imageCenter" src="../images/worldPopulation1.png">
+      <p class="text">
+This is an early screenshot from a web application I'm working on that visualizes historical trends. For each country, I created four metrics that were represented by the different color lines. What appears to be a long gray border under the nation's names is actually 3 separate lines that are supposed to represent population.<br><br>
+
+According to worldometers.info, the current world population growth rate is 1.13% per year. At first it doesn't sound like much, but this is actually an insanely fast growth rate. To put it in perspective, with this growth rate the world population will double roughly every 50 years.
+<br>
+
+      </p>
+      <img height="40%" width="75%" class="imageCenter" src="../images/worldPopulation2.png">
+
+      <p class="text">
+If we look at the history of population growth, it's apparent that explosive population growth is a relatively young "problem". Only in the past few centuries has world population skyrocketed to the current 7.4 billion. <br><br>
+
+In the case of my application, I put in the 1% growth rate and didn't give it any thought. It was only when I started working on the graphical elements that I realized the issue. My little "population bars" double in length every minute (I compressed each year into a second). Thus there was no easy way to graphically represent the scale of population growth. After all, give it a few minutes and even the integer data type itself gets overflowed (as seen in this current screenshot of the application.) <br>
+      </p>
+
+      <img height="40%" width="75%" class="imageCenter" src="../images/worldPopulation3.png">
+
+            <p class="text">
+This reality has made me re-evaluate what I aim to express with this application. Originally I thought it would be compelling to show how historical trends repeat, to show how the world works at a macro level so that even the individual with his/her short life can fathom and be inspired by it.<br><br>
+
+But issues such as population growth remind me: Although history repeats itself, it also generates new trends all the time. Trying to predict its course is, as Tolstoy often advocated, a fool's errand.<br><br>
+
+And looming over all of this is the fact that the world will end eventually. No matter how I try to represent my little worlds, they should inevitably collapse if I am being realistic about the state of humanity on the earth. Overpopulation is just one of the ways in which this could happen. Thus my idea of depicting history has become unexpectedly depressing. I wonder if I should rename my application to "Apocalypse Simulator" instead?<br>
+      </p>
+
+      <img height="40%" width="75%" class="imageCenter" src="../images/ttnw.png">
+
+      <div class="footer"></div>
+
+     <!-- JS -->
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/responsive.js"></script>
+        <script src="../js/navBarPost.js"></script>
+  </body>
+</html>

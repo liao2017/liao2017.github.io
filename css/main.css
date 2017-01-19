@@ -1,0 +1,138 @@
+/*
+	-Color Schemes: https://designschool.canva.com/blog/website-color-schemes/
+	-Maybe make Writing section tab a different color (middle, and emphasize it, since biggest)
+*/
+
+html{
+	height: 100%;
+}
+
+body{
+	background-image:url("../images/bg.jpg");
+	height:100%;
+	background-attachment:fixed;
+}
+
+h1{
+	margin:0 0;
+}
+
+#title{
+	position:relative;
+	display:inline-block;
+	font-family:Philosopher, Times;
+	font-size: 5em;
+	padding-top:5px;
+	padding-left:15px;
+	cursor:pointer;
+}
+
+#blogBody{
+	position:relative;
+	margin:0 auto;
+	width:70%;
+	background-image:url("../images/blogBodyTexture.jpg");
+}
+
+#navbar{
+	position:relative;
+	/*top:6.1em;*/
+	width:100%;
+	height:50px;
+	background-color:#82b1ff;
+}
+
+.navbarTab{
+	position:relative;
+	display:inline-block;
+	width:20%;
+	height:100%;
+	text-align:center;
+	font-family:Philosopher, Times;
+	font-color:black;
+	cursor:pointer;
+	transition-duration: 0.4s;
+}
+
+.navbarTab:hover{
+	background-color:gray;
+}
+
+.navbarTab:visited{
+	color:black;
+}
+
+.navLabel{
+	position:relative;
+	font-size:1.4em;
+	top:.5em;
+	text-decoration:none;
+}
+
+#posts{
+	display:block;
+	overflow:auto;
+	margin-top:1em;
+	padding-bottom:1em;
+}
+
+.post{
+	position:relative;
+	display:block;
+	margin: .5em auto;
+	height:15em;
+	width:15em;
+	background-color:green;
+	border-radius: 5px;
+	opacity:1;
+	cursor:pointer;
+	background-size:cover;
+}
+
+.postFilter{
+	position:absolute;
+	height:100%;
+	width:100%;
+	opacity:.3;
+	z-index:1;
+	border-radius: 5px;
+	background-color:black;
+	transition-duration: 0.4s;
+}
+
+.postFilter:hover{
+	opacity:.05;
+}
+
+.post p{
+	position:absolute;
+	left:.5em;
+	bottom:0;
+	font-size:1.4em;
+	z-index:2;
+	color:yellow;
+	pointer-events:none;
+}
+
+#older{
+	position:absolute;
+	font-size:1.75em;
+	font-family:Philosopher;
+	color:black;
+	right:.5em;
+	bottom:0;
+}
+
+#newer{
+	position:absolute;
+	font-size:1.75em;
+	font-family:Philosopher;
+	color:black;
+	left:.5em;
+	bottom:0;
+}
+
+.footer{
+	height:35px;
+	background-color:#82b1ff;
+}
