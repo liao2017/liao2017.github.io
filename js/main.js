@@ -6,6 +6,8 @@
 //This is another comment on testing (master)!
 
 
+// This is a testing comment...
+
 function resizeBody(width){
 
 	var body = document.getElementById("blogBody");
