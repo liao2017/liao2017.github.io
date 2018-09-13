@@ -6,7 +6,8 @@
 //This is another comment on testing (master)!
 
 
-// This is a testing bomment...
+
+// This is a testing domment...
 
 function resizeBody(width){
 
