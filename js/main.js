@@ -3,6 +3,8 @@
 //	-Shrinking the blog post window size
 //	-resizing toolbar
 //	-special post format for mobile? (current square too small)
+//This is another comment on testing (master)!
+
 
 function resizeBody(width){
 
