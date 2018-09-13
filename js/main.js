@@ -4,6 +4,8 @@
 //	-resizing toolbar
 //	-special post format for mobile? (current square too small)
 
+// This is a testing comment...
+
 function resizeBody(width){
 
 	var body = document.getElementById("blogBody");
